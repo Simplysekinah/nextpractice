@@ -2,20 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+    --bg:#0d0c22;
+    --bgSoft:#2d2b42;
+    --text: white;
+    --textSoft: #e5e5e5;
+    --btn: #3673fd;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg);
+}
+a{
+    color: var(--text);
+}
+.containers{
+    /* background-color: rebeccapurple; */
+    width: 1536px;
+    margin: auto;
+    padding: 0 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media (max-width:1536px) {
+    .containers{
+        width: 1366px;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@media (max-width:1366px) {
+    .containers{
+        width: 1366px;
+    }
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width:1280px) {
+    .containers{
+        width: 1024px;
+        padding: 0 20px;
+    }
+}
+@media (max-width:1024px) {
+    .containers{
+        width: 768px;
+    }
+}
+@media (max-width:768px) {
+    .containers{
+        width: 640px;
+    }
+}
+@media (max-width:640px) {
+    .containers{
+        width: 475px;
+    }
 }

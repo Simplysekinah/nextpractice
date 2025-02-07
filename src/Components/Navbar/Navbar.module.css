@@ -1,0 +1,10 @@
+.containers{
+    /* background-color: blue; */
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+}

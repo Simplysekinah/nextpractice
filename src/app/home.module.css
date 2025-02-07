@@ -1,0 +1,43 @@
+.Container{
+    display: flex;
+    gap:100px;
+}
+.textcontain{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.imgcontain{
+    flex: 1;
+    position: relative;
+}
+.picgrp{
+    position: relative;
+    width: 500px;
+    height: 50px;
+    filter: grayscale(1);
+}
+.h1{
+    font-size: 96px;
+    color: var(--text);
+}
+.p{
+    font-size: 20px;
+    color: var(--text);
+}
+.btn{
+    display: flex;
+    gap: 20px;
+}
+.learn{
+    background-color: var(--btn);
+    color: var(--text);
+}
+.learn,.contact{
+    padding: 20px;
+    min-width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
