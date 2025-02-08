@@ -41,3 +41,22 @@
     border: none;
     border-radius: 5px;
 }
+
+@media (max-width:1024px) {
+    .containers{
+       flex-direction: column;
+       text-align: center;
+    }
+    .btn{
+        justify-content: center;
+    }
+}
+
+@media (max-width:768px) {
+    .h1{
+       font-size: 64px;
+    }
+    .picgrp{
+        width: 100%;
+    }
+}
