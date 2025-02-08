@@ -1,3 +1,4 @@
+"use clients"
 import React from 'react'
 import styles from './contact.module.css'
 import Image from 'next/image'
